@@ -1,0 +1,324 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom cokmands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Diego Llanes -- Machine Learning Research Assistant} % Your Name
+\newcommand{\course}{Computer Science} % Your Program
+%\newcommand{\roll}{W01574143} % Your Roll No.
+\newcommand{\phone}{720-431-8494} % Your Phone Number
+\newcommand{\emaila}{research@diegollanes.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\LARGE \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ \href{tel:17204318494}{+1 \phone}}\\
+  Western Washington University Computer Science Pre-Masters & \href{https://github.com/Diego-Llanes}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\  
+  {} & \href{https://www.linkedin.com/in/diego-llanes-ai/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}} \\
+  {} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+\end{tabularx}
+}
+
+\vspace{-9.0mm}
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { Bachelor of Science in Computer Science}{GPA: 3.5}
+      {Western Washington University Computer Science}{January 2021 - June 2024 (Expected)}
+      
+    \resumeSubheading
+      { Master of Science in Computer Science}{GPA: 4.0}
+      {Western Washington University Computer Science}{September 2023 - June 2025 (Expected)}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      { Scientific Machine Learning Technical Intern}{Remote, Richland WA}
+      {Pacific Northwest National Laboratories (PNNL)}{July 2022 - Present}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    % \item {Trained a RNN based architecture to simulate a building and its HVAC system by mapping current state spaces, disturbances, and controls, to subsequent state spaces.}
+    % \item {Trained a DPC agent (Drgoňa, 2022) to control the RNN based building simulation to minimize energy usage and ensure thermal comfort.} 
+    \item {Benchmarked the use of Differentiable Predictive Control (Drgoňa, 2022) against traditional model-free Deep Reinforcement Learning algorithms and contributed to an open source project.}
+    \item {Worked with domain experts in Energy Efficient Building Control to understand how to best model the real world physics of these systems.}
+    \item {Gained in-depth understanding of Control Theory, Reinforcement Learning, and their applications.}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+    
+    \resumeSubheading
+      { Deep Learning Research Assistant}{Bellingham WA}
+      {Hutchinson Machine Learning Research Group}{September 2022 - Present}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Trained and tuned computer vision inspired CNN-based architectures (BOSS Net, PHOENIX Net, HYDRA Net) to extract features from spectroscopy data to predict a stellar object's surface gravity, temperature, and metallicity.}
+    \item {Read and discussed state-of-the-art research papers weekly to learn about novel  machine/deep learning techniques.}
+    \item {Gained a strong knowledge of libraries like PyTorch, Matplotlib, NumPy, and Pandas.}
+    \item {Built various "Slack Bots" using the SlackSDK API, to increase productivity and workspace morale.}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+
+    \resumeSubheading
+      { Graduate Course Teaching Assistant}{Bellingham WA}
+      {Western Washington University}{March 2023 - Present}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Developed visualization tools to help students better understand machine learning concepts.}
+    \item {Created worksheets to help students more critically engage with the content that they learned in class.}
+    \item {Built curriculum and lectured on course material to illuminate challenging concepts.}
+    \item {Worked with students one-on-one to meet their learning targets and to address their misunderstandings.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+\vspace{-8.5mm}
+
+%-------------------------------------------
+\section{\textbf{Publications}}
+% \vspace{-0.4mm}
+\begin{itemize}[leftmargin=*]
+     \setlength\itemsep{-0.25em}
+     \item {Sizemore, L., \textbf{Llanes, D.}, Kounkel, M., Hutchinson, B., Stassun, K. G., \& Chandra, V. A self-consistent data-driven model for determining stellar parameters from optical and near-IR spectra. Astronomical Journal (accepted).
+     \href{https://arxiv.org/abs/2402.05184}{https://arxiv.org/abs/2402.05184}}
+     \item {Briney, S., \textbf{Llanes, D.}, Qiang, H., Shapiro, M., Drgona, J., Tuor, \& A., Hutchinson, B. Comparing Deep Reinforcement Learning and Differentiable Predictive Control for Building Emulator Control Policy Optimization. Abstract accepted, manuscript in preparation.}
+\end{itemize}
+
+\vspace{-5.5mm}
+%-----------Achievements-----------------
+\section{\textbf{Scholarly Presentations}}
+% \vspace{-0.4mm}
+\resumeSubHeadingListStart
+     \setlength\itemsep{0.05em}
+
+% \resumePOR{ BOSS Net Paper } % Award
+%     {-- Published on Arxiv} % Event
+%     {February 2024} %Event Year
+%     Submitted a paper described ou
+    
+\resumePOR{ Sloan Digital Sky Survey V Collaboration } % Award
+    {-- Research Talk Presenter} % Event
+    {July 2023} %Event Year
+    Presented contributions to BOSS Net to an audience of astronomers.
+\resumePOR{ Western Washington University Scholars Week } % Award
+    {-- Poster Presenter} % Event
+    {March 2023} %Event Year
+    Presented BOSS Net, PHOENIX Net, TRONN contributions to an audience of students and professors.
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      { Neural Network From Scratch} %Project Name
+      { Deep learning Python package written with only NumPy to allow users to build arbitrarily deep neural networks.} %Project Name, Location Name
+      {} %Event Dates
+
+      \resumeItemListStart
+        \item {Implemented forward and backward propagation, activation functions, and gradient descent for both classification and regression tasks.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+    % \resumeProject
+    %   { Apple Music CLI} %Project Name
+    %   {A command line interface for controlling Apple Music allowing you to pause, play, skip, and "love" songs,} %Project Name, Location Name
+    %   {} %Event Dates
+
+    %   \resumeItemListStart
+    %     \item {Allows users to interface with their media player without having to leave their productivity behind.}
+    %     \item {Technology Used: Go, BubleTea, Apple Script.}
+    % \resumeItemListEnd
+    % \vspace{-2mm}
+    
+    % \resumeProject
+    %   { Whatcom Community Food Services App} %Project Name
+    %   {Created an Android app using Kotlin to help unhoused people find access to shelters, food banks, and food drives.} %Project Name, Location Name
+    %   {} %Event Dates
+
+    %   \resumeItemListStart
+    %     \item {Used Kotlin and Android studio to develop an Android application to help users gain access to resources that they have known they had access to prior.}
+    %    \item {Technology Used: Android Studio, Kotlin, NodeJS.}
+    % \resumeItemListEnd
+    
+    \vspace{-2mm}
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+
+\quad
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C/C++, Go, BASH, Kotlin, Javascript} \\
+     \textbf{Libraries}{: PyTorch, NumPy, Pandas, Matplotlib, SciKit-Learn, Scipy, Tensorflow}\\ 
+     \textbf{Frameworks}{: NodeJS, ReactJS} \\
+     \textbf{Databases}{: H5py, MySQL } \\  
+     \textbf{Documentation}{: LaTeX, Github Markdown, PowerPoint}\\
+     \textbf{Relevent Coursework}{: Deep Learning, Machine Learning, Calculus I-III, Linear Algebra I-II, Data Structures \& Algorithms, Object Oriented Programming, Database Management Systems. } \\ 
+     \textbf{Areas of Interest}{: Reinforcement Learning, NLP, Control Theory, Differentiable Programming} \\
+     \textbf{Soft Skills}{: Problem Solving, Collaborating, Presenting, Communication, Sociability} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------Positions of Responsibility-----------------
+% \section{\textbf{Positions of Responsibility}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumePOR{ Manager } % Position
+%     {Snarf's Sandwiches} %Club,Event
+%     {March - Sep 2022} %Tenure Period \\
+%     \resumeItemListStart
+%     \item {Managed and delegated tasks to a team of 15 to ensure customer satisfaction.}
+%     \item {Managed and aided with inventory to ensure supply never dropped under a threshold.}
+%     \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+% \vspace{-5mm}
+
+% \resumeSubHeadingListStart
+% \resumePOR{ BOSS Net Paper } % Award
+%     {-- Published on Arxiv} % Event
+%     {February 2024} %Event Year
+%     Submitted a paper described ou
+    % \resumePOR{} % Award
+%     {-- arXiv} % Event
+%     {July 2023} %Event Year
+%     Presented my contributions to BOSS Net to an audience of astronomers.
+% \vspace{-5mm}
+
+% \resumeSubHeadingListEnd
+
+\end{document}
