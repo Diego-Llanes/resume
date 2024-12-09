@@ -1,4 +1,5 @@
 #import "@preview/silver-dev-cv:1.0.0": *
+#show link: underline
 
 #show: cv.with(
   font-type: "PT Serif",
@@ -9,18 +10,19 @@
   pagecount: "true",
   date: "2024-11-25",
   contacts: (
-    (text: "LinkedIn", link: "https://www.linkedin.com/in/diego-llanes-ai"),
-    (text: "GitHub", link: "https://github.com/Diego-Llanes"),
-    (text: "research@diegollanes.com", link: "mailto:research@diegollanes.com"),
+    (text: "LinkedIn", hyperlink: "https://www.linkedin.com/in/diego-llanes-ai"),
+    (text: "GitHub", hyperlink: "github.com/Diego-Llanes"),
+    (text: "research@diegollanes.com", hyperlink: "mailto:research@diegollanes.com"),
   ),
+  // contacts: (
+  //   (text: "LinkedIn", hyperlink: "https://www.linkedin.com/in/diego-llanes-ai"),
+  // ),
 )
 
 // about
 #section[About Me]
-// #descript[I'm a machine learning researcher with expertise in deep learning, reinforcement learning, and control theory. I am passionate about advancing scientific discovery and solving real-world problems with AI and data-driven modeling.]
-#descript[CHANGE ME]
+I am a machine learning researcher specialized in deep learning, reinforcement learning, control, complex systems, and dynamical systems; I am passionate about advancing the field of control through data.
 
-#sectionsep
 // Experience
 #section("Experience")
 #job(
@@ -29,8 +31,9 @@
   location: "Remote, Richland, WA, USA",
   date: "Jul 2022 - Present",
   description: [
-    - Benchmarked Differentiable Predictive Control against Deep Reinforcement Learning algorithms for building control systems and contributed to open-source projects.
+    - Benchmarked Differentiable Predictive Control against traditional Deep Reinforcement Learning algorithms for building control systems and contributed to open-source projects.
     - Collaborated with domain experts to model building energy dynamics and optimize control policies for energy efficiency.
+    - Created multiple physics-based dynamical systems for the training and evaluation of control agents.
     - Developed a strong foundation in control theory, reinforcement learning, and differentiable programming for real-world applications.
   ],
 )
@@ -41,9 +44,10 @@
   location: "Bellingham, WA, USA",
   date: "Sep 2022 - Present",
   description: [
-    - Designed and trained CNN-based architectures for spectroscopy data to estimate stellar parameters such as surface gravity and temperature.
-    - Engaged in weekly reviews of state-of-the-art research, applying novel techniques to astronomy data analysis.
-    - Skilled in PyTorch, Matplotlib, and NumPy for high-performance data modeling and visualization.
+    - Designed and trained computer vision inspired architectures for hyperspectral data to estimate stellar parameters, surface gravity, metallicity, and temperature.
+    - Developed an autoregressive diffusion methodology for predicting spatio-temporal trends of climate data on a global scale.
+    - Engaged in weekly reviews of state-of-the-art research for deep learning approaches and techniques.
+    - Contributed to open-source software to increase accessibility of high-throughput compute to new users.
   ],
 )
 
@@ -53,16 +57,38 @@
   location: "Bellingham, WA, USA",
   date: "Mar 2023 - Present",
   description: [
-    - Developed visual tools and worksheets to teach complex machine learning concepts effectively.
+    - Developed visualization tools and worksheets to teach complex machine learning concepts effectively.
     - Delivered lectures on advanced topics, bridging theoretical knowledge with practical applications.
     - Mentored students individually, supporting their academic and professional growth.
   ],
 )
 
-#section("Skills")
+#section("Technical Skills")
 #oneline-title-item(
-  title: "Skills",
-  content: [Python, PyTorch, NumPy, Go, TensorFlow, C++, JavaScript, Control Theory, Reinforcement Learning],
+  title: "Technical Skills",
+  content: [
+    Python,
+    JavaScript,
+    Go,
+    C,
+    C++,
+    HTML+CSS,
+    PyTorch,
+    NumPy,
+    CUDA C,
+    React
+  ],
+)
+
+#section("Research Intrests")
+#oneline-title-item(
+  title: "Interests",
+  content: [
+    Deep Reinforcement Learning,
+    Dynamical Systems,
+    Natural Language Processing,
+    Generative AI
+  ],
 )
 
 #sectionsep
@@ -70,22 +96,22 @@
 #project(
   title: [Neural Network From Scratch],
   date: [2023],
-  description: [Developed a deep learning library in Python using only NumPy, supporting forward/backward propagation, activation functions, and gradient descent for classification and regression tasks.],
+  description: [Developed a neural network package in Python using only NumPy, supporting forward/backward propagation, non-linear activations, and gradient descent for both classification and regression tasks.],
 )
 
 #sectionsep
 #section("Education")
 #education(
   institution: [Western Washington University],
-  major: [Master of Science in Computer Science],
+  major: [Master of Science in Computer Science (4.0 GPA)],
   date: "Sep 2023 - Jun 2025 (Expected)",
   location: "Bellingham, WA, USA",
 )
 
 #education(
   institution: [Western Washington University],
-  major: [Bachelor of Science in Computer Science],
-  date: "Jan 2021 - Jun 2024 (Expected)",
+  major: [Bachelor of Science in Computer Science (3.57 GPA)],
+  date: "Jan 2021 - Jun 2024",
   location: "Bellingham, WA, USA",
 )
 
