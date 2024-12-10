@@ -6,13 +6,14 @@
   continue-header: "false",
   name: "Diego Llanes",
   address: "Bellingham, WA, USA",
-  lastupdated: "true",
+  lastupdated: "false",
   pagecount: "true",
   date: "2024-11-25",
   contacts: (
     (text: "LinkedIn", hyperlink: "https://www.linkedin.com/in/diego-llanes-ai"),
-    (text: "GitHub", hyperlink: "github.com/Diego-Llanes"),
-    (text: "research@diegollanes.com", hyperlink: "mailto:research@diegollanes.com"),
+    (text: "GitHub", hyperlink: "https://github.com/Diego-Llanes"),
+    (text: "Email", hyperlink: "mailto:research@diegollanes.com"),
+    (text: "Personal Website", hyperlink: "https://www.diegollanes.com"),
   ),
   // contacts: (
   //   (text: "LinkedIn", hyperlink: "https://www.linkedin.com/in/diego-llanes-ai"),
@@ -44,7 +45,7 @@ I am a machine learning researcher specialized in deep learning, reinforcement l
   location: "Bellingham, WA, USA",
   date: "Sep 2022 - Present",
   description: [
-    - Designed and trained computer vision inspired architectures for hyperspectral data to estimate stellar parameters, surface gravity, metallicity, and temperature.
+    - Designed and trained computer-vision inspired architectures for hyperspectral data to estimate stellar parameters, surface gravity, metallicity, and temperature.
     - Developed an autoregressive diffusion methodology for predicting spatio-temporal trends of climate data on a global scale.
     - Engaged in weekly reviews of state-of-the-art research for deep learning approaches and techniques.
     - Contributed to open-source software to increase accessibility of high-throughput compute to new users.
@@ -65,29 +66,40 @@ I am a machine learning researcher specialized in deep learning, reinforcement l
 
 #section("Technical Skills")
 #oneline-title-item(
-  title: "Technical Skills",
+  title: "Programming Languages",
   content: [
     Python,
     JavaScript,
+    R,
     Go,
+    Java,
     C,
     C++,
-    HTML+CSS,
+    HTML,
+    CSS,
+    SQL
+  ],
+)
+#oneline-title-item(
+  title: "Libraries and Frameworks",
+  content: [
     PyTorch,
     NumPy,
+    TensorFlow,
+    Gymnasium,
     CUDA C,
     React
-  ],
+  ]
 )
 
 #section("Research Intrests")
 #oneline-title-item(
   title: "Interests",
   content: [
-    Deep Reinforcement Learning,
+    Control Theory,
+    Reinforcement Learning,
     Dynamical Systems,
-    Natural Language Processing,
-    Generative AI
+    Natural Language Processing
   ],
 )
 
@@ -95,7 +107,7 @@ I am a machine learning researcher specialized in deep learning, reinforcement l
 #section("Projects")
 #project(
   title: [Neural Network From Scratch],
-  date: [2023],
+  date: [Jan 2023],
   description: [Developed a neural network package in Python using only NumPy, supporting forward/backward propagation, non-linear activations, and gradient descent for both classification and regression tasks.],
 )
 
@@ -103,15 +115,17 @@ I am a machine learning researcher specialized in deep learning, reinforcement l
 #section("Education")
 #education(
   institution: [Western Washington University],
-  major: [Master of Science in Computer Science (4.0 GPA)],
+  major: [Master of Science in Computer Science],
   date: "Sep 2023 - Jun 2025 (Expected)",
   location: "Bellingham, WA, USA",
+  gpa: "4.0",
 )
 
 #education(
   institution: [Western Washington University],
-  major: [Bachelor of Science in Computer Science (3.57 GPA)],
+  major: [Bachelor of Science in Computer Science],
   date: "Jan 2021 - Jun 2024",
   location: "Bellingham, WA, USA",
+  gpa: "3.6",
 )
 
