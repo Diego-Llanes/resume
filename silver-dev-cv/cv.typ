@@ -9,25 +9,30 @@
   lastupdated: "false",
   pagecount: "true",
   date: "2024-11-25",
-  contacts: (
-    (text: "LinkedIn", hyperlink: "https://www.linkedin.com/in/diego-llanes-ai"),
-    (text: "GitHub", hyperlink: "https://github.com/Diego-Llanes"),
-    (text: "Email", hyperlink: "mailto:research@diegollanes.com"),
-    (text: "Personal Website", hyperlink: "https://www.diegollanes.com"),
-  ),
   // contacts: (
   //   (text: "LinkedIn", hyperlink: "https://www.linkedin.com/in/diego-llanes-ai"),
+  //   (text: "GitHub", hyperlink: "https://github.com/Diego-Llanes"),
+  //   (text: "Email", hyperlink: "mailto:research@diegollanes.com"),
+  //   (text: "Personal Website", hyperlink: "https://www.diegollanes.com"),
   // ),
+  contacts: (
+    (text: "linkedin.com/in/diego-llanes-ai", hyperlink: "https://www.linkedin.com/in/diego-llanes-ai"),
+    (text: "github.com/Diego-Llanes", hyperlink: "https://github.com/Diego-Llanes"),
+    (text: "research@diegollanes.com", hyperlink: "mailto:research@diegollanes.com"),
+    // (text: "diegollanes.com", hyperlink: "https://www.diegollanes.com"),
+  ),
 )
 
 // about
 #section[About Me]
+#par(justify: true)[
 I am a machine learning researcher specialized in deep learning, reinforcement learning, control, complex systems, and dynamical systems; I am passionate about advancing the field of control through data.
+]
 
 // Experience
 #section("Experience")
 #job(
-  position: "Scientific Machine Learning Technical Intern",
+  position: "Scientific Machine Learning Masters Intern",
   institution: [Pacific Northwest National Laboratory],
   location: "Remote, Richland, WA, USA",
   date: "Jul 2022 - Present",
@@ -88,15 +93,17 @@ I am a machine learning researcher specialized in deep learning, reinforcement l
     TensorFlow,
     Gymnasium,
     CUDA C,
-    React
+    React,
+    ROS
   ]
 )
 
 #section("Research Intrests")
 #oneline-title-item(
-  title: "Interests",
+  title: none,
   content: [
     Control Theory,
+    Robotics,
     Reinforcement Learning,
     Dynamical Systems,
     Natural Language Processing
