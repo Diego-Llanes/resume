@@ -35,7 +35,7 @@ I am a machine learning researcher specialized in deep reinforcement learning, c
   position: "Scientific Machine Learning Masters Intern",
   institution: [Pacific Northwest National Laboratory],
   location: "Remote, Richland, WA, USA",
-  date: "Jul 2022 - Present",
+  date: "Jul 2023 - Present",
   description: [
     - Added features to an #link("https://github.com/pnnl/neuromancer")[open-source project] to attract new users from other domains to our project.
     - Collaborated with domain experts to model building energy dynamics and optimize control policies.
