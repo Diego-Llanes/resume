@@ -26,7 +26,7 @@
 // about
 #section[About Me]
 #par(justify: true)[
-I am a machine learning researcher specialized in deep learning, reinforcement learning, control, complex systems, and dynamical systems; I am passionate about advancing the field of control through data.
+I am a machine learning researcher specialized in deep reinforcement learning, computer vision, deep learning, and dynamical systems; I am passionate about advancing the field of control through data.
 ]
 
 // Experience
@@ -37,8 +37,7 @@ I am a machine learning researcher specialized in deep learning, reinforcement l
   location: "Remote, Richland, WA, USA",
   date: "Jul 2022 - Present",
   description: [
-    - Benchmarked Differentiable Predictive Control against traditional Deep Reinforcement Learning.
-    - Added new features to an #link("https://github.com/pnnl/neuromancer")[open-source project] to attract new users from other domains to our project.
+    - Added features to an #link("https://github.com/pnnl/neuromancer")[open-source project] to attract new users from other domains to our project.
     - Collaborated with domain experts to model building energy dynamics and optimize control policies.
     // - Created multiple physics-based dynamical systems for the training and evaluation of control agents.
     // - Designed an intuitive experiment pipeline enabling domain researchers to evaluate novel methods.
@@ -54,10 +53,10 @@ I am a machine learning researcher specialized in deep learning, reinforcement l
   location: "Bellingham, WA, USA",
   date: "Sep 2022 - Present",
   description: [
-    - Trained computer-vision inspired architectures for hyperspectral data to estimate stellar parameters. // surface gravity, metallicity, and temperature.
+    // - Trained computer-vision inspired architectures for hyperspectral data to estimate stellar parameters. // surface gravity, metallicity, and temperature.
     - Developed an autoregressive diffusion method for predicting spatio-temporal trends of climate data. //on a global scale.
     - Engaged in weekly reviews of state-of-the-art research for deep learning approaches and techniques.
-    - Contributed to #link("https://github.com/Diego-Llanes/peacock/")[open-source software] to increase accessibility of high-throughput compute to new users.
+    - Developed #link("https://github.com/Diego-Llanes/peacock/")[open-source software] to increase accessibility of high-throughput compute to new users.
   ],
 )
 
@@ -69,7 +68,7 @@ I am a machine learning researcher specialized in deep learning, reinforcement l
   description: [
     - Developed visualization tools and worksheets to teach complex machine learning concepts effectively.
     - Delivered lectures on advanced topics, bridging theoretical knowledge with practical applications.
-    - Created regular on-on-one's with new students to support their academic and professional growth.
+    // - Created regular on-on-one's with new students to support their academic and professional growth.
   ],
 )
 
@@ -103,34 +102,43 @@ I am a machine learning researcher specialized in deep learning, reinforcement l
   ]
 )
 
-#section("Research Intrests")
-#oneline-title-item(
-  title: none,
-  content: [
-    Deep Reinforcement Learning,
-    Control Theory,
-    Natural Language Processing,
-    Dynamical Systems,
-    Robotics
-  ],
-)
+// TODO: DELETE ME
+// #section("Research Intrests")
+// #oneline-title-item(
+//   title: none,
+//   content: [
+//     Deep Reinforcement Learning,
+//     Control Theory,
+//     Natural Language Processing,
+//     Dynamical Systems,
+//     Robotics
+//   ],
+// )
 
 #sectionsep
 #section("Publications")
 #project(
-  title: [#link("https://arxiv.org/abs/2411.05714")[STARS: Sensor-agnostic Transformer Architecture for Remote Sensing]],
+  title: [STARS: Sensor-agnostic Transformer Architecture for Remote Sensing],
   date: [Summer 2024],
   description: [
   Created a hyperspectral foundation model for generating low-dimensional latent representations of light information, enabling efficient downstream prediction tasks in computer vision.
-  This work was presented at IEEE Whispers 2024 conference.
+  This work was presented at #link("https://arxiv.org/abs/2411.05714")[IEEE Whispers 2024 conference].
   ],
 )
 
 #project(
-  title: [#link("https://iopscience.iop.org/article/10.3847/1538-3881/ad291d")[BOSS Net: A Self-consistent Data-driven Model for Determining Stellar Parameters]],
+  title: [TRONN BEM: Tractable, Reliable, and Operational Neural Networks for Buildings Energy Management.],
+  date: [Winter 2024],
+  description: [
+    Benchmarked the use of Differentiable Predictive Control against traditional Deep Reinforcement Learning algorithms for the control of non-linear dynamical systems. The manuscript for this work is in progress and is planned to be submitted to a control conference early Winter 2025.
+  ],
+)
+
+#project(
+  title: [BOSS Net: A Self-consistent Data-driven Model for Determining Stellar Parameters],
   date: [Fall 2023],
   description: [
-  Developed a pipeline for the estimation of surface gravity, surface temperature, and iron content from photometric light readings focused in the near-infrared. This work was presented at the Flatiron Institute during the 2023 SDSS-V Collaboration Meeting and subsequently published in the Astronomical Journal.
+  Developed a pipeline for the estimation of surface gravity, surface temperature, and iron content from photometric light readings focused in the near-infrared. This work was presented at the Flatiron Institute during the 2023 SDSS-V Collaboration Meeting and subsequently published in the #link("https://iopscience.iop.org/article/10.3847/1538-3881/ad291d")[Astronomical Journal].
   ],
 )
 // #project(
