@@ -21,7 +21,7 @@
     (text: "github.com/Diego-Llanes", hyperlink: "https://github.com/Diego-Llanes"),
     (text: "research@diegollanes.com", hyperlink: "mailto:research@diegollanes.com"),
     // (text: "720-431-8494", hyperlink: "tel:1+7204318494"),
-    // (text: "diegollanes.com", hyperlink: "https://www.diegollanes.com"),
+    (text: "diegollanes.com", hyperlink: "https://www.diegollanes.com"),
   ),
 )
 
@@ -104,19 +104,6 @@ I am a machine learning researcher specialized in deep reinforcement learning, c
   ]
 )
 
-// TODO: DELETE ME
-// #section("Research Intrests")
-// #oneline-title-item(
-//   title: none,
-//   content: [
-//     Deep Reinforcement Learning,
-//     Control Theory,
-//     Natural Language Processing,
-//     Dynamical Systems,
-//     Robotics
-//   ],
-// )
-
 #sectionsep
 #section("Publications")
 #let pub_spacing = -0.5em
@@ -124,9 +111,10 @@ I am a machine learning researcher specialized in deep reinforcement learning, c
   title: [Global Change Analysis Model Emulation],
   date: [Winter 2025],
   description: [
-    Developed an emulator for the Global Change Analysis Model and designed a methodology using deep reinforcement learning to suggest training points that increase model generalization during online training.
+    Developed an emulator for the Global Change Analysis Model and created novel sampling strategies for training an emulator on a minimal set of training data while maximizing generalizability.
+  // designed a methodology using deep reinforcement learning to suggest training points that increase model generalization during online training.
     #v(pub_spacing)
-    #emph()[This work is to be submitted in early Winter 2025 for ICLR 2025.]
+    #emph()[This work is to be submitted by early Fall 2025 for ICLR 2025.]
   ],
 )
 
@@ -136,16 +124,15 @@ I am a machine learning researcher specialized in deep reinforcement learning, c
   description: [
     Created a hyperspectral foundation model for generating low-dimensional latent representations of light information, enabling efficient downstream prediction tasks in computer vision.
     #v(pub_spacing)
-    #emph()[This work was presented at #link("https://arxiv.org/abs/2411.05714")[IEEE Whispers 2024 conference].]
+    #emph()[This work was presented at #link("https://ieeexplore.ieee.org/document/10876423")[IEEE Whispers 2024 conference].]
   ],
 )
 
-
 #project(
-  title: [TRONN BEM: Tractable, Reliable, and Operational Neural Networks for Buildings Energy Management.],
+  title: [Tractable, Reliable, and Operational Neural Networks for Buildings Energy Management.],
   date: [Winter 2024],
   description: [
-    Benchmarked the use of Differentiable Predictive Control against traditional deep reinforcement learning algorithms for the control of non-linear dynamical systems.
+    Benchmarked the use of Differentiable Predictive Control against traditional deep reinforcement learning algorithms for the control of non-linear dynamical systems and building systems.
     #v(pub_spacing)
     #emph()[The manuscript for this work is in progress and is to be submitted to a control conference early Winter 2025.]
   ],
