@@ -29,14 +29,48 @@
   ),
 )
 
+
 // about
 #section[About Me]
 #par(justify: true)[
 Machine learning engineer / data scientist enthusiastic about applying ML and statistical solutions to data.
 ]
 
+#sectionsep
+
+// education
+#section("Education")
+#education(
+  institution: [Western Washington University],
+  major: [Master of Science in Computer Science],
+  date: "Sep 2024 - Jun 2025",
+  location: "Bellingham, WA, USA",
+  gpa: "3.9",
+)
+
+#education(
+  institution: [Western Washington University],
+  major: [Bachelor of Science in Computer Science],
+  date: "Jan 2021 - Jun 2024",
+  location: "Bellingham, WA, USA",
+  gpa: "3.6",
+)
+
+#sectionsep
+
 // Experience
 #section("Experience")
+#job(
+  position: "Masters Intern",
+  institution: [Allen Institute for Artificial Intelligence (AI2)],
+  location: "Seattle, WA",
+  date: "Jul 2023 - Present",
+  description: [
+    - Added features to an #link("https://github.com/pnnl/neuromancer")[open-source project] to attract new users from other domains to our project.
+    - Developed a strong foundation in control theory, deep reinforcement learning and Generative-AI.
+  ],
+)
+
 #job(
   position: "Scientific Machine Learning Masters Intern",
   institution: [Pacific Northwest National Laboratory],
@@ -88,7 +122,6 @@ Machine learning engineer / data scientist enthusiastic about applying ML and st
     Go,
     Java,
     C,
-    C++,
     HTML,
     CSS,
     SQL
@@ -101,35 +134,29 @@ Machine learning engineer / data scientist enthusiastic about applying ML and st
     NumPy,
     TensorFlow,
     Gymnasium,
-    // CUDA C,
-    // React,
-    Flask,
-    ROS
+    Flask
   ]
 )
 
 #sectionsep
 #section("Projects")
-// TODO: Add numbers to metricize these claims "Boosted performance by tuning hyperparameters"
-// Explains something more tangible
-#let pub_spacing = -0.5em
-#project(
-  title: [Global Change Analysis Model Emulation],
-  date: [Winter 2025],
-  description: [
-    Developed an emulator for the Global Change Analysis Model and created novel sampling strategies for training an emulator on a minimal set of training data while maximizing generalizability.
-  // designed a methodology using deep reinforcement learning to suggest training points that increase model generalization during online training.
-    #v(pub_spacing)
-    #emph()[This work is to be submitted by early Fall 2025 for ICLR 2025.]
-  ],
-)
+
+// #project(
+//   title: [Web-OLMo],
+//   date: [Summer 2025],
+//   company: "Allen Institute for Artificial Intelligence",
+//   description: [
+//     Created a hyperspectral foundation model for generating low-dimensional latent representations of light information, enabling efficient downstream prediction tasks in computer vision.
+//     #emph()[This work was presented at #link("https://ieeexplore.ieee.org/document/10876423")[IEEE Whispers 2024 conference].]
+//   ],
+// )
 
 #project(
   title: [STARS: Sensor-agnostic Transformer Architecture for Remote Sensing],
   date: [Summer 2024],
+  company: "Pacific National Northwest Laboratory",
   description: [
     Created a hyperspectral foundation model for generating low-dimensional latent representations of light information, enabling efficient downstream prediction tasks in computer vision.
-    #v(pub_spacing)
     #emph()[This work was presented at #link("https://ieeexplore.ieee.org/document/10876423")[IEEE Whispers 2024 conference].]
   ],
 )
@@ -137,9 +164,9 @@ Machine learning engineer / data scientist enthusiastic about applying ML and st
 #project(
   title: [Tractable, Reliable, and Operational Neural Networks for Buildings Energy Management],
   date: [Winter 2024],
+  company: "Pacific Nortwest National Laboratory",
   description: [
     Benchmarked the use of Differentiable Predictive Control against traditional deep reinforcement learning algorithms for the control of non-linear dynamical systems and building systems.
-    #v(pub_spacing)
     #emph()[The manuscript for this work is in progress and is to be submitted to a control conference early Winter 2025.]
   ],
 )
@@ -147,11 +174,10 @@ Machine learning engineer / data scientist enthusiastic about applying ML and st
 #project(
   title: [BOSS Net: A Self-consistent Data-driven Model for Determining Stellar Parameters],
   date: [Fall 2023],
+  company: "Hutchinson Research Group",
   description: [
     Developed a pipeline for the estimation of surface gravity, surface temperature, and iron content from photometric light readings focused in the near-infrared. 
-    #v(pub_spacing)
     #emph()[This work was presented at the /*Flatiron Institute at the*/2023 SDSS-V Collaboration Meeting and published in the #link("https://iopscience.iop.org/article/10.3847/1538-3881/ad291d")[Astronomical Journal].]
-    
   ],
 )
 // #project(
@@ -159,22 +185,4 @@ Machine learning engineer / data scientist enthusiastic about applying ML and st
 //   date: [Jan 2023],
 //   description: [Developed a deep learning package in Python using only built-in libraries and lists, supporting an easy to use interface for neural network training through gradient descent, and easy to use non-linear activations.],
 // )
-
-#sectionsep
-#section("Education")
-#education(
-  institution: [Western Washington University],
-  major: [Master of Science in Computer Science],
-  date: "Sep 2024 - Jun 2025 (Expected)",
-  location: "Bellingham, WA, USA",
-  gpa: "4.0",
-)
-
-#education(
-  institution: [Western Washington University],
-  major: [Bachelor of Science in Computer Science],
-  date: "Jan 2021 - Jun 2024",
-  location: "Bellingham, WA, USA",
-  gpa: "3.6",
-)
 
