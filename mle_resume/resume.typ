@@ -1,6 +1,7 @@
 #import "sty.typ": *
-#show link: underline
 
+#show link: set text(fill: rgb("0000EE"))
+#show link: underline
 
 // Maybe move up education to a higher 
 
@@ -9,7 +10,7 @@
   font-type: "PT Serif",
   continue-header: "false",
   name: "Diego Llanes",
-  address: "Bellingham, WA, USA",
+  address: "Seattle, WA, USA",
   lastupdated: "false",
   pagecount: "true",
   date: "2024-11-25",
@@ -19,7 +20,6 @@
   //   (text: "Email", hyperlink: "mailto:research@diegollanes.com"),
   //   (text: "Personal Website", hyperlink: "https://www.diegollanes.com"),
   // ),
-  // FIXME: Links are broken here
   contacts: (
     (text: "linkedin.com/in/diego-llanes-ai", hyperlink: "https://www.linkedin.com/in/diego-llanes-ai"),
     (text: "github.com/Diego-Llanes", hyperlink: "https://github.com/Diego-Llanes"),
@@ -33,7 +33,9 @@
 // about
 #section[About Me]
 #par(justify: true)[
-Machine learning engineer / data scientist enthusiastic about applying ML and statistical solutions to data.
+// Machine learning engineer & data scientist enthusiastic about applying ML and statistical solutions to data.
+// Machine learning engineer with 3 years of experience working with large scale data, and developing and deploying computer vision and large language models; passionate about making tools that people use.
+Machine Learning Engineer with 3 years of experience using large‑scale datasets to develop and deploy computer vision and large language model solutions - - I am passionate about making tools people actually use.
 ]
 
 #sectionsep
@@ -64,25 +66,27 @@ Machine learning engineer / data scientist enthusiastic about applying ML and st
   position: "Masters Intern",
   institution: [Allen Institute for Artificial Intelligence (AI2)],
   location: "Seattle, WA",
-  date: "Jul 2023 - Present",
+  date: "May 2025 - Present",
   description: [
-    - Added features to an #link("https://github.com/pnnl/neuromancer")[open-source project] to attract new users from other domains to our project.
-    - Developed a strong foundation in control theory, deep reinforcement learning and Generative-AI.
+    - Created a visual grounding dataset of \~400k screenshots for OCR pretraining of vision language models.
+    - Filtered dataset to include only successful training samples which improved overall model accuracy by 15%.
+    - Aided in development of a human data collection tool for collecting real web trajectories of web tasks.
   ],
 )
 
 #job(
   position: "Scientific Machine Learning Masters Intern",
   institution: [Pacific Northwest National Laboratory],
-  location: "Remote, Richland, WA, USA",
-  date: "Jul 2023 - Present",
+  location: "Seattle, WA, USA",
+  date: "June 2023 - Present",
   description: [
-    - Added features to an #link("https://github.com/pnnl/neuromancer")[open-source project] to attract new users from other domains to our project.
+    - Added features to an #link("https://github.com/pnnl/neuromancer")[open-source project] which attracted new users from other domains to our project.
     // - Collaborated with domain experts to model building energy dynamics and optimize control policies.
     // - Created multiple physics-based dynamical systems for the training and evaluation of control agents.
     // - Designed an intuitive experiment pipeline enabling domain researchers to evaluate novel methods.
     // - Developed a method to apply arbitrary atmospheric profiles to the scene of a hyperspectral image.
     // - Created a foundation model for creating low-dimensional representations of hyperspectral information.
+    - Built automated experiment piplines for batch deployment using Slurm allowing for rapid result analysis.
     - Developed a strong foundation in control theory, deep reinforcement learning and Generative-AI.
   ],
 )
@@ -91,26 +95,27 @@ Machine learning engineer / data scientist enthusiastic about applying ML and st
   position: "Deep Learning Research Assistant",
   institution: [Hutchinson Machine Learning Research Group],
   location: "Bellingham, WA, USA",
-  date: "Sep 2022 - Present",
+  date: "September 2022 - June 2025",
   description: [
     // - Trained computer-vision inspired architectures for hyperspectral data to estimate stellar parameters. // surface gravity, metallicity, and temperature.
     // - Developed an autoregressive diffusion method for predicting spatio-temporal trends of climate data. //on a global scale.
     - Engaged in weekly reviews of state-of-the-art research for deep learning approaches and techniques.
+    - Mentored new students by scheduling regular check-ins for progress updates and technical guidance.
     - Developed #link("https://github.com/Diego-Llanes/peacock/")[open-source software] to increase accessibility of high-throughput compute to new users.
   ],
 )
 
-#job(
-  position: "Graduate Course Teaching Assistant",
-  institution: [Western Washington University],
-  location: "Bellingham, WA, USA",
-  date: "Mar 2023 - Present",
-  description: [
-    - Developed visualization tools and worksheets to teach complex machine learning concepts effectively.
-    - Delivered lectures on advanced topics, bridging theoretical knowledge with practical applications.
-    // - Created regular on-on-one's with new students to support their academic and professional growth.
-  ],
-)
+// #job(
+//   position: "Graduate Course Teaching Assistant",
+//   institution: [Western Washington University],
+//   location: "Bellingham, WA, USA",
+//   date: "Mar 2023 - Present",
+//   description: [
+//     - Developed visualization tools and worksheets to make complex machine learning concepts intuitive.
+//     - Delivered lectures on advanced topics, bridging theoretical knowledge with practical applications.
+//     // - Created regular on-on-one's with new students to support their academic and professional growth.
+//   ],
+// )
 
 #section("Technical Skills")
 #oneline-title-item(
@@ -118,66 +123,73 @@ Machine learning engineer / data scientist enthusiastic about applying ML and st
   content: [
     Python,
     JavaScript,
-    R,
     Go,
     Java,
     C,
+    SQL,
     HTML,
-    CSS,
-    SQL
+    CSS
   ],
 )
 #oneline-title-item(
-  title: "Libraries and Frameworks",
+  title: "Libraries / Tools",
   content: [
     PyTorch,
     NumPy,
-    TensorFlow,
+    LLaMA-Factory,
+    Pydantic,
+    Streamlit,
+    Slurm,
     Gymnasium,
     Flask
   ]
 )
 
 #sectionsep
-#section("Projects")
+#section("Projects / Publications")
 
-// #project(
-//   title: [Web-OLMo],
-//   date: [Summer 2025],
-//   company: "Allen Institute for Artificial Intelligence",
-//   description: [
-//     Created a hyperspectral foundation model for generating low-dimensional latent representations of light information, enabling efficient downstream prediction tasks in computer vision.
-//     #emph()[This work was presented at #link("https://ieeexplore.ieee.org/document/10876423")[IEEE Whispers 2024 conference].]
-//   ],
-// )
+#project(
+  title: [Web Agents],
+  date: [Summer 2025],
+  company: "Allen Institute for Artificial Intelligence (AI2)",
+  description: [
+    - Developed a vision based multimodal agent to autonomously execute end-to-end complex web tasks.
+    - Created open source web navigation datasets to accelerate community research of autonomous web agents.
+    - #emph()[The manuscript for this work is in progress and is to be submitted to CVPR 2026.]
+  ],
+)
 
 #project(
   title: [STARS: Sensor-agnostic Transformer Architecture for Remote Sensing],
   date: [Summer 2024],
   company: "Pacific National Northwest Laboratory",
   description: [
-    Created a hyperspectral foundation model for generating low-dimensional latent representations of light information, enabling efficient downstream prediction tasks in computer vision.
-    #emph()[This work was presented at #link("https://ieeexplore.ieee.org/document/10876423")[IEEE Whispers 2024 conference].]
+    // Created a hyperspectral foundation model for generating low-dimensional latent representations of light information, enabling efficient downstream prediction tasks in computer vision.
+    // #emph()[This work was presented at #link("https://ieeexplore.ieee.org/document/10876423")[IEEE Whispers 2024 conference].]
+    - Developed a vision model that accepts an arbitrary count of spectral measurements, agnostic to sensor.
+    - Created a Web GUI front end for the visualization and deployment of experiments for domain experts.
+    - #emph()[This work was presented at #link("https://ieeexplore.ieee.org/document/10876423")[IEEE Whispers 2024 conference].]
   ],
 )
 
-#project(
-  title: [Tractable, Reliable, and Operational Neural Networks for Buildings Energy Management],
-  date: [Winter 2024],
-  company: "Pacific Nortwest National Laboratory",
-  description: [
-    Benchmarked the use of Differentiable Predictive Control against traditional deep reinforcement learning algorithms for the control of non-linear dynamical systems and building systems.
-    #emph()[The manuscript for this work is in progress and is to be submitted to a control conference early Winter 2025.]
-  ],
-)
+// #project(
+//   title: [Tractable, Reliable, and Operational Neural Networks for Buildings Energy Management],
+//   date: [Winter 2024],
+//   company: "Pacific Nortwest National Laboratory",
+//   description: [
+//     Benchmarked the use of Differentiable Predictive Control against traditional deep reinforcement learning algorithms for the control of non-linear dynamical systems and building systems.
+//     #emph()[The manuscript for this work is in progress and is to be submitted to a control conference early Winter 2025.]
+//   ],
+// )
 
 #project(
   title: [BOSS Net: A Self-consistent Data-driven Model for Determining Stellar Parameters],
   date: [Fall 2023],
   company: "Hutchinson Research Group",
   description: [
-    Developed a pipeline for the estimation of surface gravity, surface temperature, and iron content from photometric light readings focused in the near-infrared. 
-    #emph()[This work was presented at the /*Flatiron Institute at the*/2023 SDSS-V Collaboration Meeting and published in the #link("https://iopscience.iop.org/article/10.3847/1538-3881/ad291d")[Astronomical Journal].]
+    - Built a CNN to estimate the surface gravity and temperature of stars from near‑infrared photometry.
+    - Released a self consistent 412k spectral training corpus by labelling points from a multitude of sensors.
+    - #emph()[This work was presented at the /*Flatiron Institute at the*/2023 SDSS-V Collaboration Meeting and published in the #link("https://iopscience.iop.org/article/10.3847/1538-3881/ad291d")[Astronomical Journal].]
   ],
 )
 // #project(
@@ -185,4 +197,3 @@ Machine learning engineer / data scientist enthusiastic about applying ML and st
 //   date: [Jan 2023],
 //   description: [Developed a deep learning package in Python using only built-in libraries and lists, supporting an easy to use interface for neural network training through gradient descent, and easy to use non-linear activations.],
 // )
-

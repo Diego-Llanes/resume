@@ -126,8 +126,8 @@
   set text(10pt, fill: headings-colour, weight: "regular")
   contacts
     .map(contact => {
-        if ("link" in contact) {
-          link(contact.link)[#contact.text]
+        if ("hyperlink" in contact) {
+          link(contact.hyperlink)[#contact.text]
         } else {
           [#contact.text]
         }
