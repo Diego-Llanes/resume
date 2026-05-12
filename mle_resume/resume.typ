@@ -30,17 +30,20 @@
 )
 
 
+
 // about
+#sectionsep
 #section[About Me]
 #par(justify: true)[
 // Machine learning engineer & data scientist enthusiastic about applying ML and statistical solutions to data.
 // Machine learning engineer with 3 years of experience working with large scale data, and developing and deploying computer vision and large language models; passionate about making tools that people use.
-Machine Learning Engineer with 3 years of experience using large‑scale datasets to develop and deploy computer vision and large language model solutions - - I am passionate about making tools people actually use.
+I am a Machine Learning Engineer with expertise in building large‑scale datasets to develop and deploy computer vision and large language model solutions -- I am passionate about making tools people actually use.
+// Machine Learning Engineer focused on the intersection of computer vision and language. I build things at scale.
 ]
 
-#sectionsep
 
 // education
+#sectionsep
 #section("Education")
 #education(
   institution: [Western Washington University],
@@ -58,15 +61,27 @@ Machine Learning Engineer with 3 years of experience using large‑scale dataset
   gpa: "3.6",
 )
 
-#sectionsep
 
 // Experience
+#sectionsep
 #section("Experience")
 #job(
-  position: "Masters Intern",
+  position: "Machine Learning Engineer II",
+  institution: [Expedia Group],
+  location: "Seattle, WA",
+  date: "October 2025 - Present",
+  description: [
+    - Owned and operated a recommendation service that handled \~2k RPS peak and scaled dynamically.
+    - Developed "Rare Find" indicators on live site which lead to an increase of 2% uplift in bookings.
+    - Trained message relevancy models to improve customer likelihood of responding to push notifications.
+  ],
+)
+
+#job(
+  position: "Contract Collaborator",
   institution: [Allen Institute for Artificial Intelligence (AI2)],
   location: "Seattle, WA",
-  date: "May 2025 - Present",
+  date: "May 2025 - October 2025",
   description: [
     - Created a visual grounding dataset of \~400k screenshots for OCR pretraining of vision language models.
     - Filtered dataset to include only successful training samples which improved overall model accuracy by 15%.
@@ -78,7 +93,7 @@ Machine Learning Engineer with 3 years of experience using large‑scale dataset
   position: "Scientific Machine Learning Masters Intern",
   institution: [Pacific Northwest National Laboratory],
   location: "Seattle, WA, USA",
-  date: "June 2023 - Present",
+  date: "June 2023 - May 2025",
   description: [
     - Added features to an #link("https://github.com/pnnl/neuromancer")[open-source project] which attracted new users from other domains to our project.
     // - Collaborated with domain experts to model building energy dynamics and optimize control policies.
@@ -86,24 +101,24 @@ Machine Learning Engineer with 3 years of experience using large‑scale dataset
     // - Designed an intuitive experiment pipeline enabling domain researchers to evaluate novel methods.
     // - Developed a method to apply arbitrary atmospheric profiles to the scene of a hyperspectral image.
     // - Created a foundation model for creating low-dimensional representations of hyperspectral information.
-    - Built automated experiment piplines for batch deployment using Slurm allowing for rapid result analysis.
+    - Built automated experiment pipelines for batch deployment using Slurm allowing for rapid result analysis.
     - Developed a strong foundation in control theory, deep reinforcement learning and Generative-AI.
   ],
 )
 
-#job(
-  position: "Deep Learning Research Assistant",
-  institution: [Hutchinson Machine Learning Research Group],
-  location: "Bellingham, WA, USA",
-  date: "September 2022 - June 2025",
-  description: [
-    // - Trained computer-vision inspired architectures for hyperspectral data to estimate stellar parameters. // surface gravity, metallicity, and temperature.
-    // - Developed an autoregressive diffusion method for predicting spatio-temporal trends of climate data. //on a global scale.
-    - Engaged in weekly reviews of state-of-the-art research for deep learning approaches and techniques.
-    - Mentored new students by scheduling regular check-ins for progress updates and technical guidance.
-    - Developed #link("https://github.com/Diego-Llanes/peacock/")[open-source software] to increase accessibility of high-throughput compute to new users.
-  ],
-)
+// #job(
+//   position: "Deep Learning Research Assistant",
+//   institution: [Hutchinson Machine Learning Research Group],
+//   location: "Bellingham, WA, USA",
+//   date: "September 2022 - June 2025",
+//   description: [
+//     // - Trained computer-vision inspired architectures for hyperspectral data to estimate stellar parameters. // surface gravity, metallicity, and temperature.
+//     // - Developed an autoregressive diffusion method for predicting spatio-temporal trends of climate data. //on a global scale.
+//     - Engaged in weekly reviews of state-of-the-art research for deep learning approaches and techniques.
+//     - Mentored new students by scheduling regular check-ins for progress updates and technical guidance.
+//     - Developed #link("https://github.com/Diego-Llanes/peacock/")[open-source software] to increase accessibility of high-throughput compute to new users.
+//   ],
+// )
 
 // #job(
 //   position: "Graduate Course Teaching Assistant",
@@ -117,33 +132,6 @@ Machine Learning Engineer with 3 years of experience using large‑scale dataset
 //   ],
 // )
 
-#section("Technical Skills")
-#oneline-title-item(
-  title: "Programming Languages",
-  content: [
-    Python,
-    JavaScript,
-    Go,
-    Java,
-    C,
-    SQL,
-    HTML,
-    CSS
-  ],
-)
-#oneline-title-item(
-  title: "Libraries / Tools",
-  content: [
-    PyTorch,
-    NumPy,
-    LLaMA-Factory,
-    Pydantic,
-    Streamlit,
-    Slurm,
-    Gymnasium,
-    Flask
-  ]
-)
 
 #sectionsep
 #section("Projects / Publications")
@@ -155,14 +143,15 @@ Machine Learning Engineer with 3 years of experience using large‑scale dataset
   description: [
     - Developed a vision based multimodal agent to autonomously execute end-to-end complex web tasks.
     - Created open source web navigation datasets to accelerate community research of autonomous web agents.
-    - #emph()[The manuscript for this work is in progress and is to be submitted to CVPR 2026.]
+    // - #emph()[The manuscript for this work is in progress and is to be submitted to CVPR 2026.]
+    - The manuscript for this work has been submitted to ECCV, the tech report and demos can be found #link("https://allenai.org/blog/molmoweb")[here].
   ],
 )
 
 #project(
   title: [STARS: Sensor-agnostic Transformer Architecture for Remote Sensing],
   date: [Summer 2024],
-  company: "Pacific National Northwest Laboratory",
+  company: "Pacific Northwest National Laboratory",
   description: [
     // Created a hyperspectral foundation model for generating low-dimensional latent representations of light information, enabling efficient downstream prediction tasks in computer vision.
     // #emph()[This work was presented at #link("https://ieeexplore.ieee.org/document/10876423")[IEEE Whispers 2024 conference].]
@@ -197,3 +186,44 @@ Machine Learning Engineer with 3 years of experience using large‑scale dataset
 //   date: [Jan 2023],
 //   description: [Developed a deep learning package in Python using only built-in libraries and lists, supporting an easy to use interface for neural network training through gradient descent, and easy to use non-linear activations.],
 // )
+//
+
+#sectionsep
+#section("Technical Skills")
+#oneline-title-item(
+  title: "Programming Languages",
+  content: [
+    Python,
+    Kotlin,
+    SQL,
+    JavaScript,
+    Go,
+    Java,
+    C,
+    HTML + CSS
+  ],
+)
+
+#oneline-title-item(
+  title: "Libraries / Tools",
+  content: [
+    PyTorch,
+    vLLM,
+    HF
+    // LLaMA-Factory,
+    // Pydantic,
+    |
+    Springboot,
+    Flask,
+    BentoML
+    |
+    Docker,
+    K8s,
+    ELK,
+    Jenkins
+    |
+    S3,
+    EC2,
+    #sym.lambda
+  ]
+)
