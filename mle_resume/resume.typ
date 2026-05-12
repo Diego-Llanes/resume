@@ -32,7 +32,7 @@
 
 
 // about
-#sectionsep
+// #sectionsep
 #section[About Me]
 #par(justify: true)[
 // Machine learning engineer & data scientist enthusiastic about applying ML and statistical solutions to data.
@@ -43,7 +43,7 @@ I am a Machine Learning Engineer with expertise in building large‑scale datase
 
 
 // education
-#sectionsep
+// #sectionsep
 #section("Education")
 #education(
   institution: [Western Washington University],
@@ -63,7 +63,7 @@ I am a Machine Learning Engineer with expertise in building large‑scale datase
 
 
 // Experience
-#sectionsep
+// #sectionsep
 #section("Experience")
 #job(
   position: "Machine Learning Engineer II",
@@ -133,7 +133,7 @@ I am a Machine Learning Engineer with expertise in building large‑scale datase
 // )
 
 
-#sectionsep
+// #sectionsep
 #section("Projects / Publications")
 
 #project(
@@ -188,7 +188,7 @@ I am a Machine Learning Engineer with expertise in building large‑scale datase
 // )
 //
 
-#sectionsep
+// #sectionsep
 #section("Technical Skills")
 #oneline-title-item(
   title: "Programming Languages",
